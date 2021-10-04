@@ -12,4 +12,22 @@ public class Algoritmos {
         }
         return arr;
     }
+
+    public static int[] selectionSort(int arr[]) {
+        int tamanho = arr.length;
+        int temp;
+        for(int i = 0; i < tamanho - 1; i++) {
+            int iMenor = i;
+            for(int j = i + 1; j < tamanho; j++) {
+                if(arr[j] < arr[iMenor]) {
+                    iMenor = j;
+                }
+            }
+            temp = arr[i];
+            arr[i] = arr[iMenor];
+            arr[iMenor] = temp;
+        }
+        return arr;
+    }
+
 }
