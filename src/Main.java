@@ -8,6 +8,8 @@ public class Main {
         Utilidades.printarArray(Algoritmos.bubbleSort(array));
         System.out.print("Ordenado SS: ");
         Utilidades.printarArray(Algoritmos.selectionSort(array));
+        System.out.print("Ordenado IS: ");
+        Utilidades.printarArray(Algoritmos.insertionSort(array));
     }
 
 
